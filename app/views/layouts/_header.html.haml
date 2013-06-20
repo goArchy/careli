@@ -1,0 +1,29 @@
+%nav.top-bar
+  %ul.title-area
+    / Title Area
+    %li.name
+      %h1
+        %a{:href => root_path} Careli Inc
+    / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+    %li.toggle-topbar.menu-icon
+      %a{:href => "#"}
+        %span Menu
+  %section.top-bar-section
+    %ul.left
+      -if current_user
+        %li.divider
+        %li.active
+          %a{:href => "#"} Dashboard 
+        %li.divider
+        %li
+          %a{:href => "#"} Logout
+      -else
+        %li.divider
+        %li.active
+          %a{:href => new_user_session_path} Sign In 
+        %li.divider
+        %li
+          %a{:href => new_user_registration_path} Register 
+
+
+      
