@@ -1,0 +1,18 @@
+%footer.row
+  .large-12.columns
+    %hr/
+    
+  .large-6.columns
+    %p © 2013 Careli International
+  .large-6.columns
+    %ul.inline-list.right
+      -if current_user
+        %li
+          %a{:href => "/admin"} Admin
+      -else
+        %li
+          %a{:href => "/"} Home
+        %li
+          %a{:href => "/about"} About
+        %li
+          %a{:href => "/contact"} Contact

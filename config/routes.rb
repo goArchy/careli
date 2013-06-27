@@ -9,6 +9,9 @@ Careli::Application.routes.draw do
       get "sign_up", :to => "devise/registrations#new"
   end
 
+  get 'contact' => 'home#contact'
+  get 'about' => 'home#about'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

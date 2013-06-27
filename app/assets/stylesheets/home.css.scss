@@ -1,3 +1,68 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/**************
+- Global Style
+***************/
+body {
+  background-color: #00012c;
+  background: url(asset_path('wood-background.jpg', image)) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page-content {
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 1px 1px 8px 1px #666;
+  overflow: hidden;
+  min-height: 400px;
+}
+.page-content.cta {
+  min-height: 0;
+  padding: 1em 1em .1em 1em;
+}
+
+.orbit-container {
+  border-top: solid 15px #fff;
+  border-right: solid 14px #fff;
+  border-left: solid 16px #fff;
+  border-bottom: solid 12px #fff;
+  box-shadow: 1px 1px 5px #777;
+  .orbit-slide-number {
+    display: none;
+  }
+}
+.orbit-bullets {
+  display: none;
+}
+
+.parents-info,
+.teachers-info,
+.daycares-info {
+  img {
+    border: solid 8px #fff;
+    box-shadow: 1px 1px 5px #777;
+  }
+}
+.panel {
+  background: #4C4D46;
+  border: solid 1px #6D881D;
+  h3 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+  }
+  p {
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 120%;
+    text-shadow: 1px 1px 1px #333;
+  }
+  .button {
+    background: #BB8516;
+    border: solid 1px #A25823;
+  }
+}
